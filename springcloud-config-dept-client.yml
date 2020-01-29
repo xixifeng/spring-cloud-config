@@ -12,7 +12,7 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://dev.db.com:3306/cloudDB03
+    url: jdbc:mysql://dev.db.com:3306/cloudDB03?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
     username: cloudDB03
     password: 9O7mPpUP57QSmUE0
     dbcp2:
@@ -35,8 +35,8 @@ eureka:
     prefer-ip-address: true
  
 info:
-  app.name: my-springcloud-springcloudconfig03-java1129
-  company.name: www.my.com
+  app.name: springcloud-config-provider-dept-8001 dev 环境
+  company.name: www.xixifeng.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
@@ -49,7 +49,7 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://dev.db.com:3306/cloudDB02
+    url: jdbc:mysql://dev.db.com:3306/cloudDB02?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
     username: cloudDB02
     password: 5YDbih1yX5jCU0i6
     dbcp2:
@@ -74,7 +74,7 @@ eureka:
     prefer-ip-address: true
  
 info:
-  app.name: my-springcloud-springcloudconfig02
-  company.name: www.my.com
+  app.name: springcloud-config-provider-dept-8001 test环境
+  company.name: www.xixifeng.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
