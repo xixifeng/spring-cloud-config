@@ -16,4 +16,4 @@ spring:
         name: springcloud-config-my-test
         
         
-#UTF8格式保存
+# UTF8格式保存
